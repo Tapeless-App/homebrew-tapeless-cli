@@ -28,24 +28,3 @@ class Tapeless < Formula
     assert_match version.to_s, shell_output("#{bin}/tapeless version")
   end
 end
-
-
-  #   # Option to build from source
-  # head "https://github.com/Tapeless-App/Tapeless-CLI.git", branch: "main"
-
-  # depends_on "go" => :build
-
-  # def install
-  #   if build.head?
-  #     ldflags = %W[
-  #       -X tapeless.app/tapeless-cli/env.Version=#{version}
-  #       -X tapeless.app/tapeless-cli/env.ApiURL=https://api.tapeless.app/cli
-  #       -X tapeless.app/tapeless-cli/env.WebURL=https://tapeless.app
-  #       -X tapeless.app/tapeless-cli/env.LoginCallbackPort=8080
-  #     ]
-
-  #     system "go", "build", "-o", bin/"tapeless", "-ldflags", ldflags.join(" "), "./"
-  #   else
-  #     bin.install "tapeless"
-  #   end
-  # end
