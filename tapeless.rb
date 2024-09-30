@@ -1,9 +1,9 @@
-class TapelessCli < Formula
+class Tapeless < Formula
   desc "Simply manage your tapeless projects and repositories from the CLI"
   homepage "https://github.com/Tapeless-App/Tapeless-CLI"
   version "0.0.2"
 
-  
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.2/Tapeless-CLI_Darwin_x86_64.tar.gz"
