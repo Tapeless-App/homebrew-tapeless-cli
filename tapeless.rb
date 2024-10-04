@@ -5,21 +5,21 @@
 class Tapeless < Formula
   desc "Tapeless CLI"
   homepage "https://tapeless.app"
-  version "0.0.11"
+  version "0.0.12"
   license "proprietary"
 
   on_macos do
     on_intel do
-      url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.11/tapeless_Darwin_x86_64.tar.gz"
-      sha256 "0cddba188acdf23da6c7d41a2ebca5f92b15465b4a7eb7b0cc5badaa92e10658"
+      url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.12/tapeless_Darwin_x86_64.tar.gz"
+      sha256 "bb04572368d16684562de69ce4cc8ab28b4e840d9d252bb8a7bba36932f0a4e4"
 
       def install
         bin.install "tapeless"
       end
     end
     on_arm do
-      url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.11/tapeless_Darwin_arm64.tar.gz"
-      sha256 "f7d54ddb55125bf93a07e3435f5dc1981d5b43ea991c00c861c4e8def198582a"
+      url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.12/tapeless_Darwin_arm64.tar.gz"
+      sha256 "eb724f52c4b11ecd48db62155eb28a51488a64755401456cf4045fbca4b785c1"
 
       def install
         bin.install "tapeless"
@@ -30,8 +30,8 @@ class Tapeless < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.11/tapeless_Linux_x86_64.tar.gz"
-        sha256 "f9b4a66866c3a22819970b753e3d4a1c0874b306432a9b2158c8cbf3b427e1c0"
+        url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.12/tapeless_Linux_x86_64.tar.gz"
+        sha256 "cd6b4f21882a59e0426ca8d00f48c239b484ab89eea3980c5d2c404b01904741"
 
         def install
           bin.install "tapeless"
@@ -40,8 +40,8 @@ class Tapeless < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.11/tapeless_Linux_arm64.tar.gz"
-        sha256 "8e186caa1237523b1885da60bdf041a06e2df62f0622f67b17a89f31d4fa32c9"
+        url "https://github.com/Tapeless-App/Tapeless-CLI/releases/download/v0.0.12/tapeless_Linux_arm64.tar.gz"
+        sha256 "eecceb3cc5f615f8cc5cda09061fd8cbc2985144e6673e7f1f37bebce296a368"
 
         def install
           bin.install "tapeless"
